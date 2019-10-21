@@ -1,0 +1,34 @@
+{
+  "name": "notenv",
+  "description": "",
+  "version": "0.0.0",
+  "author": "flaque",
+  "bugs": "https://github.com/flaque/notenv/issues",
+  "dependencies": {
+    "tslib": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "/dist"
+  ],
+  "homepage": "https://github.com/flaque/notenv",
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flaque/notenv.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc"
+  },
+  "types": "dist/index.d.ts"
+}
