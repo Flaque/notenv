@@ -2,6 +2,8 @@
 
 `notenv` is a "replacement" for a dumb uses of `.env` files. You really shouldn't use .env files. Any production secret that would live in a `.env` should _never_ live on some engineers computer. And in _many_ cases, any development "secret" should be so unimportant that it's fine to put it in source control.
 
+For example, you don't need to put your "password" for the development postgres in `.env` if it's just something running locally on a developer's laptop.  
+
 The general rule of thumb: if you're worried about committing a secret to source control, it probably shouldn't be living on some engineers computer either.
 
 ## Install
