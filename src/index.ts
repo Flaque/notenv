@@ -10,6 +10,12 @@ export default function proclaim<
     const developmentValue = envs[key];
 
     if (process.env.NODE_ENV !== "production") {
+      if (!developmentValue) {
+        throw new Error(
+          `Expected environment variable '${key}' to be set with a development value but none was found.`
+        );
+      }
+
       return developmentValue;
     }
 
