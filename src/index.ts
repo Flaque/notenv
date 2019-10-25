@@ -20,7 +20,7 @@ export default function proclaim<
     }
 
     const value = process.env[key as string];
-    if (!value || value === "") {
+    if (!value) {
       throw new Error(
         `Expected environment variable '${key}' in production but none was found.`
       );
