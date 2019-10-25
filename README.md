@@ -17,7 +17,7 @@ yarn add notenv
 `notenv` lets you `proclaim` the existence of an environment variables and then get them later on with a type-safe getter.
 
 ```ts
-import { proclaim } from "notenv";
+import proclaim from "notenv";
 
 const env = proclaim({
   DATABASE_PASSWORD: "my-development-password"
@@ -33,7 +33,7 @@ The suggested way to use `notenv` is to create a `env.js` (or `env.ts`) file som
 
 ```ts
 // env.js
-import { proclaim } from "notenv";
+import proclaim from "notenv";
 
 export default proclaim({
   DATABASE_URL: "postgres://localhost...",
