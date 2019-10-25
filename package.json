@@ -1,7 +1,7 @@
 {
   "name": "notenv",
   "description": "friends don't let friends use .env",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "flaque",
   "bugs": "https://github.com/flaque/notenv/issues",
   "dependencies": {
